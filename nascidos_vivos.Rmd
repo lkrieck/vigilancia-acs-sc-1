@@ -1,0 +1,351 @@
+---
+title: Nascidos vivos
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+
+```{r, eval=TRUE, include=FALSE, cache=FALSE}
+library(DT)
+knitr::read_chunk('Analises anomalias totais 2011.R')
+knitr::read_chunk('Analises anomalias totais 2012.R')
+knitr::read_chunk('Analises anomalias totais 2013.R')
+knitr::read_chunk('Analises anomalias totais 2014.R')
+knitr::read_chunk('Analises anomalias totais 2015.R')
+knitr::read_chunk('Analises anomalias totais 2016.R')
+knitr::read_chunk('Analises anomalias totais 2017.R')
+knitr::read_chunk('Analises anomalias totais 2018.R')
+knitr::read_chunk('Analises anomalias totais 2019.R')
+knitr::read_chunk('Analises anomalias totais 2020.R')
+
+```
+
+
+```{r, biblioteca2011, include=FALSE, results='hide'}
+```
+
+```{r, arquivos_mapas2011, include=FALSE, results='hide'}
+```
+
+```{r, analises2011, include=FALSE, results='hide'}
+```
+
+```{r, analises2012, include=FALSE, results='hide'}
+```
+
+```{r, analises2013, include=FALSE, results='hide'}
+```
+
+```{r, analises2014, include=FALSE, results='hide'}
+```
+
+```{r, analises2015, include=FALSE, results='hide'}
+```
+
+```{r, analises2016, include=FALSE, results='hide'}
+```
+
+```{r, analises2017, include=FALSE, results='hide'}
+```
+
+```{r, analises2018, include=FALSE, results='hide'}
+```
+
+```{r, analises2019, include=FALSE, results='hide'}
+```
+
+```{r, analises2020, include=FALSE, results='hide'}
+```
+
+```{r, outros_arquivos2011, include=FALSE, results='hide'}
+```
+
+
+# Por município de residência
+
+## Mapas {.tabset}
+
+### 2011
+
+```{r, mapa_nv.muni.resid2011, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2012
+
+```{r, mapa_nv.muni.resid2012, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+### 2013
+
+```{r, mapa_nv.muni.resid2013, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2014
+
+```{r, mapa_nv.muni.resid2014, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2015
+
+```{r, mapa_nv.muni.resid2015, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2016
+
+```{r, mapa_nv.muni.resid2016, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2017
+
+```{r, mapa_nv.muni.resid2017, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2018
+
+```{r, mapa_nv.muni.resid2018, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2019
+
+```{r, mapa_nv.muni.resid2019, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2020
+
+```{r, mapa_nv.muni.resid2020, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+# Por macrorregião de residência
+
+## Mapas {.tabset}
+
+### 2011
+
+```{r, mapa_nv.macro.resid2011, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2012
+
+```{r, mapa_nv.macro.resid2012, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+### 2013
+
+```{r, mapa_nv.macro.resid2013, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2014
+
+```{r, mapa_nv.macro.resid2014, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2015
+
+```{r, mapa_nv.macro.resid2015, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2016
+
+```{r, mapa_nv.macro.resid2016, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2017
+
+```{r, mapa_nv.macro.resid2017, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2018
+
+```{r, mapa_nv.macro.resid2018, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2019
+
+```{r, mapa_nv.macro.resid2019, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### 2020
+
+```{r, mapa_nv.macro.resid2020, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+# Por município de nascimento
+
+## Tabelas {.tabset}
+
+### 2011
+
+```{r, tab_muni.nasc2011, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_nv.muni.nasc2011, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+### 2012
+
+```{r, tab_muni.nasc2012, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_nv.muni.nasc2012, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+### 2013
+
+```{r, tab_muni.nasc2013, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_nv.muni.nasc2013, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+### 2014
+
+```{r, tab_muni.nasc2014, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_nv.muni.nasc2014, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+### 2015
+
+```{r, tab_muni.nasc2015, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_nv.muni.nasc2015, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+### 2016
+
+```{r, tab_muni.nasc2016, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_nv.muni.nasc2016, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+### 2017
+
+```{r, tab_muni.nasc2017, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_nv.muni.nasc2017, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+### 2018
+
+```{r, tab_muni.nasc2018, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_nv.muni.nasc2018, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+### 2019
+
+```{r, tab_muni.nasc2019, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_nv.muni.nasc2019, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+### 2020
+
+```{r, tab_muni.nasc2020, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_nv.muni.nasc2020, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
