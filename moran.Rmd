@@ -1,0 +1,189 @@
+---
+title: Moran Global e Local
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+
+```{r, eval=TRUE, include=FALSE, cache=FALSE}
+knitr::read_chunk('analises moran.R')
+
+```
+
+```{r, biblioteca_moran, include=FALSE, results='hide'}
+```
+
+```{r, arquivos_mapasp1120_1, include=FALSE, results='hide'}
+```
+
+
+# Moran {.tabset}
+
+## 2011
+<p><strong>Estatística I de Moran:</strong> 0,0569971951076982<br/> 
+<strong>Valor p:</strong>0,04992<br/>
+
+## 2012
+
+<p><strong>Estatística I de Moran:</strong>  -0,00638893902709363<br/>
+<strong>Valor p:</strong>0,4861<br/>
+
+## 2013
+
+<p><strong>Estatística I de Moran:</strong>  0,0481370986304978<br/>
+<strong>Valor p:</strong>0,0767<br/>
+
+## 2014
+
+<p><strong>Estatística I de Moran:</strong>  0,0285997370376793<br/>
+<strong>Valor p:</strong>0,1784<br/>
+
+## 2015
+
+<p><strong>Estatística I de Moran:</strong>  -0,0661330421810414<br/>
+<strong>Valor p:</strong>0,9754<br/>
+
+## 2016
+
+<p><strong>Estatística I de Moran:</strong>  0,0273970808519051<br/>
+<strong>Valor p:</strong>0,1787<br/>
+
+## 2017
+
+<p><strong>Estatística I de Moran:</strong>  -0,00864761164683734<br/>
+<strong>Valor p:</strong>0,5251<br/>
+
+## 2018
+
+<p><strong>Estatística I de Moran:</strong>  -0,0115015251308465<br/>
+<strong>Valor p:</strong>0,5681<br/>
+
+## 2019
+
+<p><strong>Estatística I de Moran:</strong>  0,00184954633056117<br/>
+<strong>Valor p:</strong>0,4177<br/>
+
+## 2020
+
+<p><strong>Estatística I de Moran:</strong>  -0,0274587492293885<br/>
+<strong>Valor p:</strong>0,7472<br/>
+
+
+# LISA {.tabset}
+
+## 2011
+
+
+```{r, analisesmoran, include=FALSE, results='hide'}
+```
+
+```{r, analiseslisa2011, include=FALSE, results='hide'}
+```
+
+```{r, mapalisa2011, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+## 2012
+
+```{r, analisesmoran, include=FALSE, results='hide'}
+```
+
+```{r, analiseslisa2012, include=FALSE, results='hide'}
+```
+
+```{r, mapalisa2012, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+## 2013
+
+
+```{r, analisesmoran, include=FALSE, results='hide'}
+```
+
+```{r, analiseslisa2013, include=FALSE, results='hide'}
+```
+
+```{r, mapalisa2013, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+## 2014
+
+```{r, analisesmoran, include=FALSE, results='hide'}
+```
+
+```{r, analiseslisa2014, include=FALSE, results='hide'}
+```
+
+```{r, mapalisa2014, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+## 2015
+
+```{r, analisesmoran, include=FALSE, results='hide'}
+```
+
+```{r, analiseslisa2015, include=FALSE, results='hide'}
+```
+
+```{r, mapalisa2015, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+## 2016
+
+```{r, analisesmoran, include=FALSE, results='hide'}
+```
+
+```{r, analiseslisa2016, include=FALSE, results='hide'}
+```
+
+```{r, mapalisa2016, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+## 2017
+
+```{r, analisesmoran, include=FALSE, results='hide'}
+```
+
+```{r, analiseslisa2017, include=FALSE, results='hide'}
+```
+
+```{r, mapalisa2017, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+## 2018
+
+```{r, analisesmoran, include=FALSE, results='hide'}
+```
+
+```{r, analiseslisa2018, include=FALSE, results='hide'}
+```
+
+```{r, mapalisa2018, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+## 2019
+
+```{r, analisesmoran, include=FALSE, results='hide'}
+```
+
+```{r, analiseslisa2019, include=FALSE, results='hide'}
+```
+
+```{r, mapalisa2019, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+## 2020
+
+```{r, analisesmoran, include=FALSE, results='hide'}
+```
+
+```{r, analiseslisa2020, include=FALSE, results='hide'}
+```
+
+```{r, mapalisa2020, echo=FALSE, warning=FALSE, message=FALSE}
+```

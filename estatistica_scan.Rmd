@@ -1,0 +1,422 @@
+---
+title: Estatística Scan e Suavização
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+
+```{r, eval=TRUE, include=FALSE, cache=FALSE}
+library(DT)
+knitr::read_chunk('Scan anomalias selecionadas.R')
+knitr::read_chunk('suavizacao espacial.R')
+```
+
+
+```{r, biblioteca_suavizacao, include=FALSE, results='hide'}
+```
+
+```{r, biblioteca_serie, include=FALSE, results='hide'}
+```
+
+```{r, arquivos_mapasp1120, include=FALSE, results='hide'}
+```
+
+
+# Estatística Scan e Suavização BYM
+
+A estatística scan foi aplicada para cada grupos de anomalias, considerando os municípios de residência e o período de 2011-2020. É exibido no mapa os clusters que possuem o valor p significativo. Quando não significativo, é exibido apenas o primeiro cluster com o valor p mais baixo. <br/>
+A suavização do risco relativo foi feita através do modelo BYM(Besag–York–Mollié), que inclui um componente ICAR para autocorrelação espacial + um componente de efeitos aleatórios.
+
+
+
+## Defeitos de tubo neural {.tabset}
+
+### Scan
+
+
+```{r, bancoscan, include=FALSE, results='hide'}
+```
+
+```{r, dadostuboneural, include=FALSE, results='hide'}
+```
+
+```{r, clustertubo, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### BYM
+
+```{r, bancoSIR, include=FALSE, results='hide'}
+```
+
+```{r, dadosbymtubo, include=FALSE, results='hide'}
+```
+
+```{r, mapabymtubo, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+### Tabela
+
+```{r, tabelatubo, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+DT::datatable(tabela_tubo, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+
+## Microcefalia {.tabset}
+
+### Scan
+
+
+```{r, bancoscan, include=FALSE, results='hide'}
+```
+
+```{r, dadosmicrocefalia, include=FALSE, results='hide'}
+```
+
+```{r, clustermicrocefalia, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### BYM
+
+```{r, bancoSIR, include=FALSE, results='hide'}
+```
+
+```{r, dadosbymmicrocefalia, include=FALSE, results='hide'}
+```
+
+```{r, mapabymmicrocefalia, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+### Tabela
+
+```{r, tabelamicrocefalia, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+DT::datatable(tabela_microcefalia, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+## Cardiopatias congênitas {.tabset}
+
+### Scan
+
+```{r, bancoscan, include=FALSE, results='hide'}
+```
+
+```{r, dadoscardio, include=FALSE, results='hide'}
+```
+
+```{r, clustercardio, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### BYM
+
+```{r, bancoSIR, include=FALSE, results='hide'}
+```
+
+```{r, dadosbymcardio, include=FALSE, results='hide'}
+```
+
+```{r, mapabymcardio, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+### Tabela
+
+```{r, tabelacardio, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+DT::datatable(tabela_cardio, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+## Fendas orais {.tabset}
+
+### Scan
+
+```{r, bancoscan, include=FALSE, results='hide'}
+```
+
+```{r, dadosfendas, include=FALSE, results='hide'}
+```
+
+```{r, clusterfendas, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### BYM
+
+```{r, bancoSIR, include=FALSE, results='hide'}
+```
+
+```{r, dadosbymfendas, include=FALSE, results='hide'}
+```
+
+```{r, mapabymfendas, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+### Tabela
+
+```{r, tabelafendas, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+DT::datatable(tabela_fendas, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+## Anomalias de órgãos genitais - Hipospádias {.tabset}
+
+### Scan
+
+```{r, bancoscan, include=FALSE, results='hide'}
+```
+
+```{r, dadoshipospadias, include=FALSE, results='hide'}
+```
+
+```{r, clusterhipospadias, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### BYM
+
+
+```{r, bancoSIR, include=FALSE, results='hide'}
+```
+
+```{r, dadosbymhipospadias, include=FALSE, results='hide'}
+```
+
+```{r, mapabymhipospadias, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+### Tabela
+
+```{r, tabelahipospadias, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+DT::datatable(tabela_hipospadias, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+## Anomalias de órgãos genitais - Sexo indefinido {.tabset}
+
+### Scan
+
+```{r, bancoscan, include=FALSE, results='hide'}
+```
+
+```{r, dadosSI, include=FALSE, results='hide'}
+```
+
+```{r, clusterSI, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### BYM
+
+
+```{r, bancoSIR, include=FALSE, results='hide'}
+```
+
+```{r, dadosbymSI, include=FALSE, results='hide'}
+```
+
+```{r, mapabymSI, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+### Tabela
+
+```{r, tabelaSI, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+DT::datatable(tabela_SI, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+
+
+## Defeitos de membros {.tabset}
+
+### Scan
+
+```{r, bancoscan, include=FALSE, results='hide'}
+```
+
+```{r, dadosmembros, include=FALSE, results='hide'}
+```
+
+```{r, clustermembros, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### BYM
+
+
+```{r, bancoSIR, include=FALSE, results='hide'}
+```
+
+```{r, dadosbymmembros, include=FALSE, results='hide'}
+```
+
+```{r, mapabymmembros, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+### Tabela
+
+```{r, tabelamembros, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+DT::datatable(tabela_membros, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+## Defeitos da parede abdominal {.tabset}
+
+### Scan
+
+```{r, bancoscan, include=FALSE, results='hide'}
+```
+
+```{r, dadosabdominal, include=FALSE, results='hide'}
+```
+
+```{r, clusterabdominal, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+### BYM
+
+
+```{r, bancoSIR, include=FALSE, results='hide'}
+```
+
+```{r, dadosbymabdominal, include=FALSE, results='hide'}
+```
+
+```{r, mapabymabdominal, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+### Tabela
+
+```{r, tabelaabdominal, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+DT::datatable(tabela_abdominal, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+## Síndrome de Down {.tabset}
+
+### Scan
+
+```{r, bancoscan, include=FALSE, results='hide'}
+```
+
+```{r, dadosdown, include=FALSE, results='hide'}
+```
+
+```{r, clusterdown, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+### BYM
+
+
+```{r, bancoSIR, include=FALSE, results='hide'}
+```
+
+```{r, dadosbymdown, include=FALSE, results='hide'}
+```
+
+```{r, mapabymdown, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+### Tabela
+
+```{r, tabeladown, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+DT::datatable(tabela_down, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+

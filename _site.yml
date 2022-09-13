@@ -1,0 +1,61 @@
+name: "site_relatorio"
+title: "Anomalias Congênitas em Santa Catarina"
+output_dir: "."
+navbar:
+  right:
+    - text: "Início"
+      href: index.html
+    - text: "Linhas de base"
+      href: linhas_base.html      
+    - text: "Nascidos vivos"
+      href: nascidos_vivos.html
+    - text: "Anomalias selecionadas"
+      menu:
+        - text: "Todas selecionadas"
+          href: anomalias_selecionadas.html
+        - text: "---------"  
+        - text: "Defeitos de tubo neural"
+          href: tuboneural.html
+        - text: "---------"
+        - text: "Microcefalia"
+          href: microcefalia.html
+        - text: "---------"
+        - text: "Cardiopatias congênitas"
+          href: cardiopatias.html
+        - text: "---------"
+        - text: "Fendas orais"
+          href: fendas.html
+        - text: "---------"
+        - text: "Anomalias de órgãos genitais"
+          href: orgaos_genitais.html
+        - text: "---------"
+        - text: "Anomalias de órgãos genitais - Hipospádias"
+          href: orgaos_genitais.html
+        - text: "---------"
+        - text: "Anomalias de órgãos genitais - Sexo indefinido"
+          href: orgaos_genitais.html
+        - text: "---------"
+        - text: "Defeitos de membros"
+          href: membros.html
+        - text: "---------"
+        - text: "Defeitos da parede abdominal"
+          href: parede_abdominal.html
+        - text: "---------"
+        - text: "Síndrome de Down"
+          href: sindrome_down.html 
+    - text: "Séries temporais"
+      href: series_temporal.html
+    - text: "Estatísticas espaciais"
+      menu:
+        - text: "Moran Global e Local"
+          href: moran.html
+        - text: "---------"
+        - text: "Estatística Scan"
+          href: estatistica_scan.html
+
+output:
+  html_document:
+    theme: flatly
+
+
+

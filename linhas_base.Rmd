@@ -1,0 +1,60 @@
+---
+title: Linhas de base de prevalência
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r, eval=TRUE, include=FALSE, cache=FALSE}
+library(DT)
+knitr::read_chunk('Linhas de base 1119.R')
+knitr::read_chunk('Linhas de base 1120.R')
+```
+
+```{r, biblioteca_linha, include=FALSE, results='hide'}
+```
+
+```{r, analises_linha1119, include=FALSE, results='hide'}
+```
+
+```{r, analises_linha1120, include=FALSE, results='hide'}
+```
+
+
+# 2011-2019
+
+```{r, tabela_linha.de.base1119, echo=FALSE, results='hide'}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tabela_linha.de.base1119, extensions = 'Buttons', 
+              options = list(
+                  dom = 'Bfrtip',
+                  buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+# 2011-2020
+
+```{r, tabela_linha.de.base1120, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tabela_linha.de.base1120, extensions = 'Buttons', 
+              options = list(
+                  dom = 'Bfrtip',
+                  buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+

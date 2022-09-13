@@ -1,0 +1,197 @@
+---
+title: Séries temporais
+output:
+  distill::distill_article: 
+    toc: true
+    toc_depth: 2
+    toc_float: true
+---
+
+<style>
+
+body {
+  padding-top:5px
+}
+
+.navbar{
+  visibility: hidden
+}
+
+</style>
+
+
+```{r, eval=TRUE, include=FALSE, cache=FALSE}
+library(DT)
+knitr::read_chunk('Series temporais.R')
+```
+
+```{r, biblioteca_serie, include=FALSE, results='hide'}
+```
+
+```{r, analisestotal, include=FALSE, results='hide'}
+```
+
+```{r, analisesmacro, include=FALSE, results='hide'}
+```
+
+```{r, analisesreg, include=FALSE, results='hide'}
+```
+
+
+# Todo estado
+
+## Nascidos vivos
+
+```{r, grafico.total.nv, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+## Nascidos vivos c/ ACs
+
+```{r, grafico.total.nv.ac, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8, layout="l-screen-inset"}
+```
+
+## Prevalências ao nascimento
+
+```{r, grafico.total.prev, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8,  layout="l-screen-inset"}
+```
+
+
+## Tabela
+
+```{r, tabela.total, echo=FALSE}
+```
+
+```{r, echo=FALSE, layout="l-body-outset"}
+
+DT::datatable(tabela_grafico.total, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+# Por macrorregiões
+
+## Prevalências ao nascimento
+
+### Defeitos de tubo neural
+
+```{r, grafico.macro.prev.dtn, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8,  layout="l-screen-inset"}
+```
+
+ <a href="#top">Volte ao topo</a>
+
+### Microcefalia
+
+```{r, grafico.macro.prev.micro, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8,  layout="l-screen-inset"}
+```
+
+ <a href="#top">Volte ao topo</a>
+
+### Cardiopatias congênitas
+
+```{r, grafico.macro.prev.cardio, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8,  layout="l-screen-inset"}
+```
+
+ <a href="#top">Volte ao topo</a>
+
+### Fendas orais
+
+```{r, grafico.macro.prev.fendas, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8,  layout="l-screen-inset"}
+```
+
+ <a href="#top">Volte ao topo</a>
+
+### Anomalias de órgãos genitais
+
+```{r, grafico.macro.prev.genitais, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8,  layout="l-screen-inset"}
+```
+
+ <a href="#top">Volte ao topo</a>
+
+### Anomalias de órgãos genitais - Hipospádias
+
+```{r, grafico.macro.prev.hipospadias, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8,  layout="l-screen-inset"}
+```
+
+ <a href="#top">Volte ao topo</a>
+
+### Anomalias de órgãos genitais - Sexo indefinido
+
+```{r, grafico.macro.prev.SI, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8,  layout="l-screen-inset"}
+```
+
+ <a href="#top">Volte ao topo</a>
+
+
+### Defeitos de membros
+
+```{r, grafico.macro.prev.membros, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8,  layout="l-screen-inset"}
+```
+
+ <a href="#top">Volte ao topo</a>
+
+### Defeitos da parede abdominal
+
+```{r, grafico.macro.prev.abdominal, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8,  layout="l-screen-inset"}
+```
+
+ <a href="#top">Volte ao topo</a>
+
+### Síndrome de Down
+
+```{r, grafico.macro.prev.down, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8,  layout="l-screen-inset"}
+```
+
+ <a href="#top">Volte ao topo</a>
+
+### Todas anomalias selecionadas
+
+```{r, grafico.macro.prev.todas, echo=FALSE, message=FALSE, warning=FALSE, fig.width= 16, fig.height= 8,  layout="l-screen-inset"}
+```
+
+ <a href="#top">Volte ao topo</a>
+
+
+## Tabela
+
+```{r, tabela.grafico.macro, echo=FALSE}
+```
+
+```{r, echo=FALSE, layout="l-body-outset"}
+
+DT::datatable(tabela_grafico.macro, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+ <a href="#top">Volte ao topo</a>
+
+
+# Por regiões
+
+## Tabela
+
+```{r, tabela.grafico.reg, echo=FALSE}
+```
+
+```{r, echo=FALSE, layout="l-body-outset"}
+
+DT::datatable(tabela_grafico.reg, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+ <a href="#top">Volte ao topo</a>

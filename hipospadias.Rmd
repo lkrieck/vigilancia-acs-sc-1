@@ -1,0 +1,770 @@
+---
+title: Anomalias de órgãos genitais - Hipospádias
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+```{r, eval=TRUE, include=FALSE, cache=FALSE}
+library(DT)
+knitr::read_chunk("Análises de anomalias de órgãos genitais hipospadia 2011.R")
+knitr::read_chunk("Análises de anomalias de órgãos genitais hipospadia 2012.R")
+knitr::read_chunk("Análises de anomalias de órgãos genitais hipospadia 2013.R")
+knitr::read_chunk("Análises de anomalias de órgãos genitais hipospadia 2014.R")
+knitr::read_chunk("Análises de anomalias de órgãos genitais hipospadia 2015.R")
+knitr::read_chunk("Análises de anomalias de órgãos genitais hipospadia 2016.R")
+knitr::read_chunk("Análises de anomalias de órgãos genitais hipospadia 2017.R")
+knitr::read_chunk("Análises de anomalias de órgãos genitais hipospadia 2018.R")
+knitr::read_chunk("Análises de anomalias de órgãos genitais hipospadia 2019.R")
+knitr::read_chunk("Análises de anomalias de órgãos genitais hipospadia 2020.R")
+knitr::read_chunk("Análises de anomalias de órgãos genitais hipospadia periodo 2011-2019.R")
+knitr::read_chunk("Análises de anomalias de órgãos genitais hipospadia periodo 2011-2020.R")
+knitr::read_chunk("Arquivos tabelas.R")
+```
+
+
+```{r, biblioteca2011, include=FALSE, results='hide'}
+```
+
+```{r, arquivos_mapas2011, include=FALSE, results='hide'}
+```
+
+```{r, analises2011, include=FALSE, results='hide'}
+```
+
+```{r, analises2012, include=FALSE, results='hide'}
+```
+
+```{r, analises2013, include=FALSE, results='hide'}
+```
+
+```{r, analises2014, include=FALSE, results='hide'}
+```
+
+```{r, analises2015, include=FALSE, results='hide'}
+```
+
+```{r, analises2016, include=FALSE, results='hide'}
+```
+
+```{r, analises2017, include=FALSE, results='hide'}
+```
+
+```{r, analises2018, include=FALSE, results='hide'}
+```
+
+```{r, analises2019, include=FALSE, results='hide'}
+```
+
+```{r, analises2020, include=FALSE, results='hide'}
+```
+
+```{r, analisesp1119, include=FALSE, results='hide'}
+```
+
+```{r, analisesp1120, include=FALSE, results='hide'}
+```
+
+```{r, arquivos_tabelas, include=FALSE, results='hide'}
+```
+
+
+# Por município de residência
+
+## Nascidos vivos com Anomalias
+
+### Mapas {.tabset}
+
+#### 2011-19
+
+```{r, mapa_genitais.muni.residp1119, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+#### 2011-20
+
+```{r, mapa_genitais.muni.residp1120, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+
+## Prevalências ao nascimento
+
+### Mapas {.tabset}
+
+#### 2011-19
+
+```{r, mapa_prev.genitais.muni.residp1119, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+#### 2011-20
+
+```{r, mapa_prev.genitais.muni.residp1120, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+
+### Tabelas {.tabset}
+
+#### 2011
+
+```{r, tab_prev.genitais.muni.resid2011, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.muni.resid2011, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2012
+
+```{r, tab_prev.genitais.muni.resid2012, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.muni.resid2012, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2013
+
+```{r, tab_prev.genitais.muni.resid2013, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.muni.resid2013, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2014
+
+```{r, tab_prev.genitais.muni.resid2014, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.muni.resid2014, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2015
+
+```{r, tab_prev.genitais.muni.resid2015, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.muni.resid2015, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2016
+
+```{r, tab_prev.genitais.muni.resid2016, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.muni.resid2016, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2017
+
+```{r, tab_prev.genitais.muni.resid2017, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.muni.resid2017, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2018
+
+```{r, tab_prev.genitais.muni.resid2018, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.muni.resid2018, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2019
+
+```{r, tab_prev.genitais.muni.resid2019, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.muni.resid2019, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2020
+
+```{r, tab_prev.genitais.muni.resid2020, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.muni.resid2020, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2011-19
+
+```{r, tab_prev.genitais.muni.residp1119, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.muni.residp1119, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2011-20
+
+```{r, tab_prev.genitais.muni.residp1120, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.muni.residp1120, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+# Por macrorregião de residência
+
+## Nascidos vivos com Anomalias
+
+### Mapas {.tabset}
+
+#### 2011-19
+
+```{r, mapa_genitais.macro.residp1119, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+#### 2011-20
+
+```{r, mapa_genitais.macro.residp1120, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+
+## Prevalências ao nascimento
+
+### Mapas {.tabset}
+
+#### 2011-19
+
+```{r, mapa_prev.genitais.macro.residp1119, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+#### 2011-20
+
+```{r, mapa_prev.genitais.macro.residp1120, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
+
+
+### Tabelas {.tabset}
+
+#### 2011
+
+```{r, tab_prev.genitais.macro.resid2011, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.macro.resid2011, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2012
+
+```{r, tab_prev.genitais.macro.resid2012, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.macro.resid2012, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2013
+
+```{r, tab_prev.genitais.macro.resid2013, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.macro.resid2013, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2014
+
+```{r, tab_prev.genitais.macro.resid2014, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.macro.resid2014, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2015
+
+```{r, tab_prev.genitais.macro.resid2015, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.macro.resid2015, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2016
+
+```{r, tab_prev.genitais.macro.resid2016, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.macro.resid2016, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2017
+
+```{r, tab_prev.genitais.macro.resid2017, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.macro.resid2017, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2018
+
+```{r, tab_prev.genitais.macro.resid2018, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.macro.resid2018, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2019
+
+```{r, tab_prev.genitais.macro.resid2019, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.macro.resid2019, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2020
+
+```{r, tab_prev.genitais.macro.resid2020, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.macro.resid2020, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2011-19
+
+```{r, tab_prev.genitais.macro.residp1119, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.macro.residp1119, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2011-20
+
+```{r, tab_prev.genitais.macro.residp1120, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.macro.residp1120, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+
+
+# Por região de residência
+
+## Prevalências ao nascimento
+
+### Tabelas {.tabset}
+
+#### 2011
+
+```{r, tab_prev.genitais.reg.resid2011, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.reg.resid2011, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2012
+
+```{r, tab_prev.genitais.reg.resid2012, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.reg.resid2012, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2013
+
+```{r, tab_prev.genitais.reg.resid2013, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.reg.resid2013, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2014
+
+```{r, tab_prev.genitais.reg.resid2014, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.reg.resid2014, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2015
+
+```{r, tab_prev.genitais.reg.resid2015, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.reg.resid2015, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2016
+
+```{r, tab_prev.genitais.reg.resid2016, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.reg.resid2016, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2017
+
+```{r, tab_prev.genitais.reg.resid2017, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.reg.resid2017, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2018
+
+```{r, tab_prev.genitais.reg.resid2018, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.reg.resid2018, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2019
+
+```{r, tab_prev.genitais.reg.resid2019, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.reg.resid2019, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2020
+
+```{r, tab_prev.genitais.reg.resid2020, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.reg.resid2020, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2011-19
+
+```{r, tab_prev.genitais.reg.residp1119, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.reg.residp1119, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2011-20
+
+```{r, tab_prev.genitais.reg.residp1120, echo=FALSE}
+```
+
+```{r, echo=FALSE}
+
+DT::datatable(tab_prev.genitais.reg.residp1120, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+
+# Por estabelecimento
+
+## Prevalências ao nascimento
+
+### Tabelas {.tabset}
+
+#### 2011-19
+
+```{r, tab_prev.genitais.estabp1119, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+DT::datatable(tab_prev.genitais.estabp1119, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
+#### 2011-20
+
+```{r, tab_prev.genitais.estabp1120, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+DT::datatable(tab_prev.genitais.estabp1120, extensions = 'Buttons',
+          options = list(dom = 'Bfrtip', 
+                          buttons = list(list(
+        extend = 'collection',
+        buttons = c('csv', 'excel', 'pdf'),
+        text = 'Download'
+      ))))
+```
+
